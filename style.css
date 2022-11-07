@@ -276,10 +276,11 @@ p{
     color: #3590d2;
     cursor: pointer;
 }
-.pdf{
+.iframe{
     width: 400px;
     height: 250px;
     border:solid 1px black;
     overflow: hidden;
     position: absolute;
+    overflow: hidden;
 }

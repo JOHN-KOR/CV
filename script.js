@@ -2,6 +2,7 @@ let img = document.querySelector(".img");
 let preview = document.querySelectorAll(".preview");
 let link = [
     "Documents/Web implementation.pdf",
+    "https://jeonghyeon-resume.netlify.app/",
     "Documents/SEO profile.pdf",
     "Documents/Extranet-Notion4.gif",
     "Documents/Remote Selfie_WF.pdf",
@@ -27,10 +28,11 @@ preview.forEach((el, index) => {
          const besideMouseY = e.pageY - 250;
 
         // pdf 클라스명 생성 및 해당 자료 노출
-        aIframe.className = "pdf";
+        aIframe.className = "iframe";
         aIframe.src = link[index];
         document.body.appendChild(aIframe);
-        
+
+
         //마우스 위치에 맞춰 생성
         aIframe.style.left = besideMouseX + 'px';
         aIframe.style.top = besideMouseY + 'px';        
